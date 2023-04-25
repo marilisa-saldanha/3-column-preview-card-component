@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.664);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  border-radius: .7rem;
+  margin: 1rem;
+  width: 23rem;
+  height: auto;
+}
+
+.card img {
+  width: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.card h1 {
+  color: var(--very-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.card p {
+  color: var(--transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.6rem;
+}
+
+.btn button{
+  margin-top: 2rem;
+  width: 9rem;
+  padding: .7rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn button p {
+  font-size: .9rem;
+}
+
+.btnCard1:hover {
+  background-color: var(--bright-orange);
+  border: 2px solid var(--transparent-white);
+}
+
+.btnCard1:hover p {
+  color: var(--very-light-gray);
+}
+
+.btnCard2:hover {
+  background-color: var(--dark-cyan);
+  border: 2px solid var(--transparent-white);
+}
+
+.btnCard2:hover p {
+  color: var(--very-light-gray);
+}
+
+.btnCard3:hover {
+  background-color: var(--very-dark-cyan);
+  border: 2px solid var(--transparent-white);
+}
+
+.btnCard3:hover p {
+  color: var(--very-light-gray);
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bright-orange);
+  padding: 3rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.card1 button p {
+  color: var(--bright-orange);
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-cyan);
+  padding: 3rem;
+}
+
+.card2 button p {
+  color: var(--dark-cyan);
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-cyan);
+  padding: 3rem;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.card3 button p {
+  color: var(--very-dark-cyan);
+}
+
+footer {
+  text-align: center;
+  padding: .5rem;
+}
+
+.attribution {
+  font-size: 1rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--very-dark-cyan);
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 37.5rem;
+    height: 26rem;
+    margin: 3rem;
+  }
+
+  .card h1 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .card1 {
+    padding: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+
+  .card2 {
+    padding: 2rem;
+  }
+
+  .card3 {
+    padding: 2rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: .5rem;
+  }
+
+  .btn button{
+    margin-top: 3rem;
+    padding: 8px;
+  }
+  
+  .btn button p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .card {
+    width: 49rem;
+    height: 26rem;
+    margin: 3rem;
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+
+  .card p {
+    font-size: 0.87rem;
+    line-height: 1.4rem;
+  }
+
+  .card1 {
+    padding: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+
+  .card2 {
+    padding: 2rem;
+  }
+
+  .card3 {
+    padding: 2rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: .5rem;
+  }
+
+  .btn button{
+    margin-top: 4rem;
+    padding: 8px;
+    border-radius: 4rem;
+    text-align: center;
+  }
+  
+  .btn button p {
+    font-size: .8rem;
+  }
+}
+
+/* @media (min-width: 1440px) {
+  .card h1 {
+    font-size: 2rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+  }
+
+  .btn button{
+    margin-top: 4rem;
+    padding: 10px;
+  }
+} */
